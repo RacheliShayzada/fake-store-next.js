@@ -1,7 +1,12 @@
 import axios from 'axios';
 
 const http = axios.create({
-    baseURL: 'http://localhost:3000',
+    url: "/api",
+    baseURL: '/api',
+    headers: {
+        'Content-Type': 'application/json',
+        "access-control-allow-origin": "*"
+    }
 });
 
 export default http;
