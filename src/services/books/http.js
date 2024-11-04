@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-    url: "/api",
-    baseURL: '/api',
+    baseURL: '/api', // גישה יחסית ל-API הפנימי
     headers: {
         'Content-Type': 'application/json',
         "access-control-allow-origin": "*"
