@@ -1,0 +1,45 @@
+.container {
+    display: flex; /* שימוש ב-flexbox כדי לסדר את הקומפוננטות */
+    justify-content: space-between; /* רווח בין אלמנטים */
+}
+
+.itemsContainer {
+    flex: 1; /* תופס את שאר המקום */
+    margin-right: 20px; /* רווח בין רשימת המוצרים לטופס */
+}
+
+.productForm {
+    position: fixed; /* קיבוע הטופס בצד ימין */
+    right: 20px; /* ריחוק מהקצה הימני */
+    top: 100px; /* ריחוק מהחלק העליון */
+    width: 300px; /* רוחב קבוע לטופס */
+    background-color: rgba(255, 255, 255, 0.8); /* רקע לבן עם שקיפות */
+    border: 1px solid #ddd; /* גבול בהיר */
+    border-radius: 8px; /* פינות מעוגלות */
+    padding: 20px; /* ריפוד */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל לעומק */
+    z-index: 1000; /* מבטיח שהטופס יהיה מעל אלמנטים אחרים */
+}
+
+.productForm input,
+.productForm textarea {
+    width: 100%; /* רוחב מלא */
+    padding: 10px; /* ריפוד פנימי */
+    margin-bottom: 10px; /* רווח בין שדות */
+    border: 1px solid #ccc; /* גבול בהיר */
+    border-radius: 4px; /* פינות מעוגלות */
+}
+
+.productForm button {
+    padding: 10px 15px; /* ריפוד */
+    margin-right: 10px; /* רווח בין כפתורים */
+    background-color: #4CAF50; /* צבע רקע ירוק */
+    color: white; /* צבע טקסט לבן */
+    border: none; /* בלי גבול */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* שינוי מצביע בעת ריחוף */
+}
+
+.productForm button:hover {
+    background-color: #45a049; /* צבע ירוק כהה בעת ריחוף */
+}

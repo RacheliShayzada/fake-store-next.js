@@ -1,0 +1,83 @@
+.container {
+    max-width: 1200px; /* גודל מקסימלי למיכל */
+    margin: 0 auto; /* מרכז את המיכל */
+    padding: 20px; /* ריווח פנימי */
+    background-color: rgb(169, 167, 167); /* צבע רקע בהיר */
+    border-radius: 8px; /* פינות מעוגלות */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* צל קל */
+}
+
+h1 {
+    color: #4a4a4a; /* צבע כותרת */
+    text-align: center; /* מרכז את הכותרת */
+    font-size:xx-large;
+}
+
+.itemsContainer {
+    display: grid; /* משתמש ברשת */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* מספר עמודות דינמי */
+    gap: 15px; /* רווח בין פריטים */
+}
+
+.item {
+    background-color: white; /* צבע רקע פסטלי */
+    border-radius: 5px; /* פינות מעוגלות */
+    padding: 15px; /* ריווח פנימי */
+    text-align: center; /* טקסט ממורכז */
+    transition: transform 0.2s; /* אפקט מעבר */
+    display:flex;
+    flex-direction: column; 
+}
+
+.item:hover {
+    transform: translateY(-5px); /* הזזת הפריט למעלה בהזזה */
+}
+
+img {
+    max-width: 100%; /* התמונה תתאים לרוחב הפריט */
+    height: auto; /* גובה אוטומטי */
+    border-radius: 5px; /* פינות מעוגלות לתמונה */
+    max-height: 150px;
+}
+
+.descriptionContainer {
+    max-height: 60px; /* גובה מקסימלי של שלוש שורות */
+    overflow-y: auto; /* אפשרות לגלול */
+    border: 1px solid #ced4da; /* גבול עדין סביב התיאור */
+    padding: 5px;
+    margin-top: auto;
+    background-color: #f1f3f5; /* צבע רקע לפסקה הנגללת */
+    margin-bottom: 0;
+}
+
+p {
+    color: #555; /* צבע טקסט */
+    text-align: left;
+}
+
+button{
+    background-color: rgb(55, 55, 119); /* צבע רקע אדום */
+    color: white; /* צבע טקסט לבן */
+    border: none; /* בלי גבול */
+    border-radius: 5px; /* פינות מעוגלות */
+    padding: 5px 10px; /* ריפוד */
+    cursor: pointer; /* שינוי מצביע בעת ריחוף */
+    transition: background-color 0.3s; /* אפקט מעבר */
+    margin-right: 5px;
+}
+
+.button:hover{
+    background-color: rgb(75, 73, 73); /* ��בע ��קע אדו�� עם ה����ה */
+}
+
+.buttonsContainer{
+    margin-top: 5px;
+    display: flex;
+    justify-content: start; 
+    margin-bottom: 0;
+}
+
+.addButton{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
