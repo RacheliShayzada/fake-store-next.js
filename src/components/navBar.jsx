@@ -1,5 +1,5 @@
 
-"use client"; 
+"use client";
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -27,6 +27,11 @@ function NavBar() {
           <li>
             <Link href="/Jewlary" className={pathname === '/Jewlary' ? 'active-link' : 'link'}>
               Jewlary
+            </Link>
+          </li>
+          <li>
+            <Link href="/Counter" className={pathname === '/Counter' ? 'active-link' : 'link'}>
+              Counter
             </Link>
           </li>
         </ul>
